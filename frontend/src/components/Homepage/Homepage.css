@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Orbitron:wght@300&display=swap');
+
+
+.Homepage {
+    background-image: url(../../assets/Home_backgorund_img.png);
+    background-size: cover;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.Homepage_Headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Italiana', serif;
+    color: #69443C;
+}
+
+.Homepage_Headings>h1 {
+    font-size: 10vmax;
+    font-weight: 100;
+    mix-blend-mode: color-burn;
+    
+   
+}
+
+.Homepage_Headings>h3 {
+    mix-blend-mode: color-burn;
+    font-size: 2vmax;
+    font-weight: 100;
+}
+
+.Homepage_scroll_btn > a > button{
+    cursor: pointer;
+    color: #69443C;
+    background-color: transparent;
+    width: 160px;
+    height: 60px;
+    border:2px solid #69443C;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.Homepage_scroll_btn > a > button:hover{
+    transform: scale(1.05);
+    background-color: #69443C;
+    color: antiquewhite;
+}
+
+
+
+.featuredProducts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+
+}
+
+
+#featuredProducts_head{
+    font-size: 3em;
+}
+
+#featuredProducts_content{
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

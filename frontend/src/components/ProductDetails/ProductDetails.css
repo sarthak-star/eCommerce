@@ -1,0 +1,182 @@
+.productpage {
+  max-width: 100vw;
+
+  display: flex;
+  padding: 4%;
+  flex-direction: column;
+  
+
+}
+
+.productpage_top {
+  width: 100%;
+  display: flex;
+
+}
+
+.productpage_bottom {
+  width: 100%;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.productpage_left {
+  width: 50%;
+
+}
+
+.productpage_right {
+  width: 50%;
+
+  padding: 3%;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.productpage_right>h4 {
+  color: gray;
+  font-size: 20px;
+}
+
+#price {
+  font-weight: 900;
+}
+
+.ratings {
+  display: flex;
+
+  gap: 15px;
+  font-size: 25px;
+}
+
+.quantity {
+  display: flex;
+  padding: 2%;
+  align-items: center;
+  text-decoration: none;
+  color: #444444;
+}
+
+.quantity Link {
+  text-decoration: none;
+  color: #444444;
+}
+
+
+
+.quantity button {
+  padding: 12px 17px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-size: 70%;
+  transition: 0.2s all;
+}
+
+.quantity button:hover {
+  background-color: #444444;
+  color: #FAEBD7;
+}
+
+.quantity input[type="Number"] {
+  width: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 70%;
+}
+
+.quantity button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.Submitreview{
+  padding: 12px 17px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-size: 70%;
+  transition: 0.2s all;
+}
+
+.Submitreview:hover{
+  background-color: #444444;
+  color: #FAEBD7;
+}
+
+
+.redcolor {
+  color: red;
+
+}
+
+.greencolor {
+  color: green;
+}
+
+
+
+
+
+
+
+.reviewsHeading {
+  color: #000000be;
+  font: 500 1.4vmax "Roboto";
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+  padding: 1vmax;
+  width: 20vmax;
+  margin: auto;
+  margin-bottom: 4vmax;
+}
+
+.reviews {
+  display: flex;
+  overflow: auto;
+}
+
+.reviewCard {
+  flex: none;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+  border: 1px solid rgba(56, 56, 56, 0.116);
+  width: 30vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vmax;
+  padding: 3vmax;
+}
+
+.reviewCard>img {
+  width: 5vmax;
+}
+
+.reviewCard>p {
+  color: rgba(0, 0, 0, 0.836);
+  font: 600 0.9vmax "Roboto";
+}
+
+.reviewCardComment {
+  color: rgba(0, 0, 0, 0.445);
+  font: 300 0.8vmax cursive;
+}
+
+.noReviews {
+  font: 400 1.3vmax "Gill Sans";
+  text-align: center;
+  color: rgba(0, 0, 0, 0.548);
+}
