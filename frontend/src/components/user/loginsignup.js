@@ -50,6 +50,7 @@ const LoginSignUp = ({ location }) => {
         
     };
 
+    
     const redirect = location?.search ? location.search.split("=")[1] : "/account";
 
     useEffect(() => {
@@ -59,7 +60,7 @@ const LoginSignUp = ({ location }) => {
         }
 
         if (isAuthenticated) {
-            navigate(redirect);
+            navigate("/shipping");
         }
     }, [dispatch, error, navigate, isAuthenticated, redirect]);
 

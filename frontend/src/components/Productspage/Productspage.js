@@ -58,7 +58,7 @@ const Productspage = () => {
                 :
                 (
                     <>
-                        <div className="category">
+                        {/* <div className="category">
                             <ul className="categoryBox">
                                 {categories.map((category) => (
                                     <li
@@ -70,8 +70,9 @@ const Productspage = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </div> */}
                         <div className="products_box">
+                            <h1 className='Products_heading' >All Products</h1>
                             <InfiniteScroll
                                 dataLength={products && products.length}
                                 next={fetchMoreData}

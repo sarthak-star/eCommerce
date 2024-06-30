@@ -23,24 +23,26 @@ import MyOrders from "./components/Orders/MyOrders.js";
 import OrderDetails from "./components/Orders/OrderDetails.js";
 import ConfirmOrder from "./components/Cart/ConfirmOrder.js";
 import NotFound from "./layout/Not Found/NotFound";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
 
   const [stripeApiKey, setStripeApiKey] = useState("");
 
-  // async function getStripeApiKey() {
-  //   const { data } = await axios.get("/api/v1/stripeapikey");
+  async function getStripeApiKey() {
+    const { data } = await axios.get("/api/v1/stripeapikey");
 
-  //   setStripeApiKey(data.stripeApiKey);
-  // }
+    setStripeApiKey(data.stripeApiKey);
+  }
 
   useEffect(() => {
 
 
     store.dispatch(loadUser());
 
-    // getStripeApiKey();
+    getStripeApiKey();
   }, []);
 
   window.addEventListener("contextmenu", (e) => e.preventDefault());
@@ -50,12 +52,12 @@ function App() {
       <Header />
 
 
-      {/* 
+      
       {stripeApiKey && (
         <Elements stripe={loadStripe(stripeApiKey)}>
           <ProtectedRoute exact path="/process/payment" component={Payment} />
         </Elements>
-      )} */}
+      )}
 
       <Routes>
         <Route exact path="/" element={<Homepage />} />

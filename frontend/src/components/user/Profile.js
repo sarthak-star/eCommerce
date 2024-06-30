@@ -36,6 +36,7 @@ const Profile = ({ history }) => {
 
               <div>
                 <Link to="/orders">My Orders</Link>
+                <Link to="/">Back to shopping</Link>
               </div>
             </div>
           </div>

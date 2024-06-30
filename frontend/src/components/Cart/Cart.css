@@ -176,3 +176,9 @@
     font: 300 2vmax "Roboto";
   }
 }
+
+#item_qty{
+  padding: 10px;
+  font-weight: 700;
+  font-size: 18px;
+}
